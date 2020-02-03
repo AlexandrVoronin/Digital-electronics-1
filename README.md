@@ -26,3 +26,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 * Unordered list can use asterisks
 - Or minuses
 + Or pluses
+
+[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
