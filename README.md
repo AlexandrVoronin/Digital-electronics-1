@@ -32,7 +32,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 [I'm an inline-style link with title](https://www.google.com "Google's Homepage")
 
 
-| Header 1  | Another header here | This is a long header |
-| --- | --- | --- |
-| Some data | Some more data | data | 
-| data | Some long data here | more data |
+| A  | NOT |
+| --- | --- |
+| 0 | 1 | 
+| 1 | 0 |
