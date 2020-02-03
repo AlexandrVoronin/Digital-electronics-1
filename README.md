@@ -36,3 +36,4 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 | --- | --- |
 | 0 | 1 | 
 | 1 | 0 |
+| :-: | :-: |
