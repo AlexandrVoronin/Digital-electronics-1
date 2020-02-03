@@ -32,7 +32,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 [I'm an inline-style link with title](https://www.google.com "Google's Homepage")
 
 
-A |  NOT
---| --
+A|NOT
+--|--
 0 |  1
 1 |  0
