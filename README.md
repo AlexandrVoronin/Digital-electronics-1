@@ -34,5 +34,5 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 A|NOT
 --|--
-0 | -1
-1 | -0
+0 | 1
+1 | 0
