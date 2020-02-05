@@ -46,7 +46,7 @@
 | 1 | 1 | 1 | 0 | 0 | 0 |
 
 
-## The other task
+## The input identifier
 
 ![logic](../../Images/01_3_InputAnalysis.png)
 
