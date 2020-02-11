@@ -15,29 +15,31 @@
 
     ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3EB%7D%5E%7BSoP%7D%3D)
 
+    
+    | **A: v B: ->** | 0 | 1 |
+    | :-: | :-: | :-: |
+    | 0 | 0 | 0 |
+    | 1 | 1 | 0 |
     &nbsp;
     
     ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3DB%7D%5E%7BSoP%7D%3D)
     
+    | **A: v B: ->** | 0 | 1 |
+    | :-: | :-: | :-: |
+    | 0 | 1 | 0 |
+    | 1 | 0 | 1 |
     &nbsp;
     
     ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3CB%7D%5E%7BPoS%7D%3D)
-    
+      
+    | **A: v B: ->** | 0 | 1 |
+    | :-: | :-: | :-: |
+    | 0 | 0 | 1 |
+    | 1 | 0 | 0 |
     &nbsp;
 
     Create K-maps for all three functions.
-
-    &nbsp;
-
-    &nbsp;
-
-    &nbsp;
-
-    &nbsp;
-
-    &nbsp;
-
-    &nbsp;
+    
 
     Use the K-map to create the minimum ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3CB%7D%5E%7BPoS%2Cmin%7D) function.
 
