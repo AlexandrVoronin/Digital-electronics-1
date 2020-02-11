@@ -9,6 +9,7 @@
     | 1 | 0 | 1 | 0 | 0 |
     | 1 | 1 | 0 | 1 | 0 |
 
+
     According to the truth table, create canonical SoP (Sum of Product) or PoS (Product of Sum) output forms as follows:
     Create K-maps for all three functions.
     
@@ -38,9 +39,13 @@
     
     &nbsp;
 
-    Create K-maps for all three functions.
+
     
 
     Use the K-map to create the minimum ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3CB%7D%5E%7BPoS%2Cmin%7D) function.
 
+    &nbsp;
+    
+    ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3CB%7D%5E%7BPoS%2Cmin%7D)
+    
     &nbsp;
