@@ -13,8 +13,8 @@
 
     &nbsp;
 
-    ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3EB%7D%5E%7BSoP%7D%3D)
-
+    ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3EB%7D%5E%7BSoP%7D%3D) 
+    ![equation](https://latex.codecogs.com/gif.latex?A%5Ccdot%20%5Cbar%7BB%7D)
     | **A: v B: ->** | 0 | 1 |
     | :-: | :-: | :-: |
     | 0 | 0 | 0 |
