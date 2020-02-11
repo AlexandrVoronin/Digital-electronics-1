@@ -46,6 +46,6 @@
 
     &nbsp;
     
-    ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3CB%7D%5E%7BPoS%2Cmin%7D) ![equation](https://latex.codecogs.com/gif.latex?%3D%28%5Cbar%7BA%7D%20&plus;%20%5Cbar%7BB%7D%29%20%5Ccdot%20B)
+    ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3CB%7D%5E%7BPoS%2Cmin%7D) ![equation](https://latex.codecogs.com/gif.latex?%3D%5Cbar%7BA%7D%20%5Ccdot%20B)
     
     &nbsp;
