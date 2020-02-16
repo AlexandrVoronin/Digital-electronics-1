@@ -1,4 +1,4 @@
-# lab3
+# Prerequisities
     
 
 | **Digit** | **Input** | **a** | **b** | **c** | **d** | **e** | **f** | **g** |
