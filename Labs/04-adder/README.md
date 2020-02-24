@@ -4,10 +4,10 @@
 
     | **B** | **A** | **Carry** | **Sum** |
     | :-: | :-: | :-: | :-: |
-    | 0 | 0 |  |  |
-    | 0 | 1 |  |  |
-    | 1 | 0 |  |  |
-    | 1 | 1 |  |  |
+    | 0 | 0 | 0 | 0 |
+    | 0 | 1 | 1 | 0 |
+    | 1 | 0 | 1 | 0 |
+    | 1 | 1 | 0 | 1 |
 
 2. A full adder has three inputs and two outputs. The two inputs are A, B, and Carry input. The outputs are Carry output and Sum. Comlpete the full adder truth table and draw a logic diagram of both output functions.
 
