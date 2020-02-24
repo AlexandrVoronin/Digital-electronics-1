@@ -23,6 +23,10 @@
     | 1 | 0 | 1 | 1 | 0 |
     | 1 | 1 | 0 | 1 | 0 |
     | 1 | 1 | 1 | 1 | 1 |
+    
+    ![logic](../../Images/Cout.PNG)
+    
+    ![logic](../../Images/Sum.PNG)
 
 3. Find the relationship between half adder and full adder logic diagrams.
 
