@@ -84,6 +84,7 @@ begin
     --------------------------------------------------------------------
     p_mux : process (s_cnt, data0_i, data1_i, data2_i, data3_i, dp_i)
     begin
+	    --s_hex??? TBD
         case s_cnt is
         when "00" =>
             dig_o <= data0_i
@@ -99,5 +100,6 @@ begin
             dp_i <= "0001"
         end case;
     end process p_mux;
+		
 
 end architecture Behavioral;
