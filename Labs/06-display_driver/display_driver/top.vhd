@@ -1,3 +1,4 @@
+
 ------------------------------------------------------------------------
 --
 -- Implementation of seven-segment display driver.
@@ -59,15 +60,15 @@ begin
     --------------------------------------------------------------------
     -- Sub-block of driver_7seg entity
     DRIVER_7SEG: entity work.driver_7seg
-    	port map(srst_n_i => s_BTN0,
-                    clk_i => clk_i,
-                    dp_o => disp_dp,
-		    dig_o => disp_dig_0
-
-                    data0_i => s_data0,
-                    data1_i => s_data1,
-                    data2_i => s_data2,
-                    data3_i => s_data3
+    		port map(srst_n_i => s_BTN0,
+                	clk_i => clk_i,
+		 	dp_o => disp_dp,
+			dig_o => disp_dig_o,
+			seg_o => disp_seg_o,
+			data0_i => s_data0,
+			data1_i => s_data1,
+			data2_i => s_data2,
+			data3_i => s_data3
 
 		);
 
