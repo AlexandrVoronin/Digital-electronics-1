@@ -57,7 +57,7 @@ begin
     -- Sub-block of hex_to_7seg entity
       HEX_TO_7SEG: entity work.hex_to_7seg
 		port map( hex_i => s_hex,
-					seg_o => disp_seg_o
+				 seg_o => disp_seg_o
 		);
 
 
@@ -86,13 +86,17 @@ begin
     begin
         case s_cnt is
         when "00" =>
-            s_hex <= data0_i
+            dig_o <= data0_i
+            dp_i <= "1000"
         when "01" =>
-            s_hex <= data1_i
+            dig_o <= data1_i
+            dp_i <= "0100"
         when "10" =>
-            s_hex <= data2_i
+            dig_o <= data2_i
+            dp_i <= "0010"
         when others =>
-            s_hex <= data3_i
+            dig_o <= data3_i
+            dp_i <= "0001"
         end case;
     end process p_mux;
 
