@@ -47,9 +47,9 @@ begin
     
     CL_ENABLE: entity work.clock_enable
 		 generic map (
-		 g_NPERIOD => x"09c4"
+		 g_NPERIOD => x"0028"
 		)
-		port map(srst_n_i => s_BTN0,
+		port map(   srst_n_i => srst_n_i,
 					clk_i => clk_i,
 					clock_enable_o => s_en	
 		);
@@ -84,20 +84,24 @@ begin
     --------------------------------------------------------------------
     p_mux : process (s_cnt, data0_i, data1_i, data2_i, data3_i, dp_i)
     begin
-	    --s_hex??? TBD
+
         case s_cnt is
         when "00" =>
-            dig_o <= data0_i
-            dp_i <= "1000"
+            dig_o <= "1110";
+            s_hex <= data0_i;
+            dp_o  <= dp_i(0);
         when "01" =>
-            dig_o <= data1_i
-            dp_i <= "0100"
+            dig_o <= "1101";
+            s_hex <= data1_i;
+            dp_o  <= dp_i(1);
         when "10" =>
-            dig_o <= data2_i
-            dp_i <= "0010"
+            dig_o <= "1011";
+            s_hex <= data2_i;
+            dp_o  <= dp_i(2);
         when others =>
-            dig_o <= data3_i
-            dp_i <= "0001"
+            dig_o <= "0111";
+            s_hex <= data3_i;
+            dp_o  <= dp_i(3);
         end case;
     end process p_mux;
 		
