@@ -20,3 +20,5 @@ To define our own data type, we can use command: type variable_name is ([list of
 
 (taken from our solution)
 type state_type is (r_red,r_yellow,r_green,g_red,g_yellow,g_green)
+
+![simulace](../../Images/simulace.jpg)
