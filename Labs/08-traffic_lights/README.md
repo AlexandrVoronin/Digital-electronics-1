@@ -17,4 +17,5 @@ A finite state machine (FSM) is a computation model that can be implemented with
 Read the article [Implementing a Finite State Machine in VHDL](https://www.allaboutcircuits.com/technical-articles/implementing-a-finite-state-machine-in-vhdl/) and understand how to design your own FSM. How you can define your own data type in VHDL? Give an example.
 
 To define our own data type, we can use command: type variable_name is ([list of all possible states])
+
 type Light_states is (S1,S2,S3,S4,S5,S6)
