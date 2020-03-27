@@ -31,5 +31,5 @@ type state_type is (r_red,r_yellow,r_green,g_red,g_yellow,g_green)
 
 ## State diagram of FSM
  
-![state diagram](../../Images/state diagram.jpg)
+![state_diagram](../../Images/state_diagram.jpg)
 
