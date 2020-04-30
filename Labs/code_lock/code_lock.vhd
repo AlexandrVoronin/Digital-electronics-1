@@ -4,26 +4,26 @@ use ieee.numeric_std.all;
 
 entity lock is 
 port(
-    clk_i:      in  std_logic;
+    clk_i   :   in  std_logic;
     srst_n_i:   in  std_logic;
-    row_i:      in  unsigned(3 downto 0); --low active with pull up resistors
-    col_o:      out unsigned(2 downto 0);
-    state_o:	out unsigned(15 downto 0);
-    alarm_o:    out unsigned(3 downto 0)  --output signalization /wrong code/
+    row_i   :   in  unsigned(3 downto 0); --low active with pull up resistors
+    col_o   :   out unsigned(2 downto 0);
+    state_o :	out unsigned(15 downto 0);
+    alarm_o :   out unsigned(3 downto 0)  --output signalization /wrong code/
     );
 end lock;
 
 architecture Behavioral of lock is
 
     type        state_type is (rel_0, ent_1, rel_1, ent_2, rel_2, ent_3, rel_3, ent_4, rel_4, enter, wrong_code, alarm, code_unlocked, time_up);
-    signal      code_state, next_code_state:        state_type;         
-    signal      s_en:                               std_logic;
-    signal      number_pressed:                     unsigned(3 downto 0);           --assign number to detected key
-    signal      start_count:                        std_logic;
-    signal      start_blink:                        std_logic;
-    signal      s_time_up:                          std_logic;
-    signal      count_time:                         unsigned(3 downto 0);           --helps count the passed input time
-    signal      s_blink:                            unsigned(1 downto 0);
+    signal      code_state, next_code_state :       state_type;         
+    signal      s_en                        :       std_logic;
+    signal      number_pressed              :       unsigned(3 downto 0);           --assign number to detected key
+    signal      start_count                 :       std_logic;
+    signal      start_blink                 :       std_logic;
+    signal      s_time_up                   :       std_logic;
+    signal      count_time                  :       unsigned(3 downto 0);           --helps count the passed input time
+    signal      s_blink                     :       unsigned(1 downto 0);
     
     --set your own input time--
     constant    input_time:                         unsigned(3 downto 0) := "1001"; --5 seconds to enter code
@@ -73,7 +73,7 @@ begin
                 alarm_o  	<= "1111";
                 start_count <= '0';
                 s_time_up  	<= '0';
-                start_blink 	<= '0';
+                start_blink <= '0';
                 s_blink		<= "00";
             elsif s_en = '1' then                                           --rising_edge with own period to count_time
                 
