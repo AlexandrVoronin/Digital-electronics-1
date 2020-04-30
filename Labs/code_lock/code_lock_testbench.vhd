@@ -12,12 +12,12 @@ architecture tb of testbench is
   port(
 	-- INPUTS
 	clk_i:		 in  	std_logic;
-    srst_n_i:	 in  	std_logic;   -- Synchronous reset (active low)
-    row_i:		 in  	unsigned(3 downto 0);
-    -- OUTPUTS
-    col_o:       out    unsigned(2 downto 0);
-    state_o:	 out    unsigned(15 downto 0);
-    alarm_o:	 out 	unsigned(3 downto 0)
+    	srst_n_i:	 in  	std_logic;   -- Synchronous reset (active low)
+    	row_i:		 in  	unsigned(3 downto 0);
+    	-- OUTPUTS
+    	col_o:       out    unsigned(2 downto 0);
+    	state_o:	 out    unsigned(15 downto 0);
+    	alarm_o:	 out 	unsigned(3 downto 0)
     
   );
   end component;
@@ -32,12 +32,12 @@ architecture tb of testbench is
   
   BEGIN
 	UUT: lock port map(
-      clk_i    => clk_in,
-      srst_n_i => srst_n_in,
-      row_i    => row_in,
-      col_o    => col_out,
-      state_o  => state_out,
-      alarm_o  => alarm_out
+      		clk_i    => clk_in,
+      		srst_n_i => srst_n_in,
+     		row_i    => row_in,
+      		col_o    => col_out,
+      		state_o  => state_out,
+      		alarm_o  => alarm_out
     );
 	
 
