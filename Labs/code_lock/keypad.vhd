@@ -58,7 +58,7 @@ begin
                         state <= col_2;
                     end case;
                  when col_2 =>
-                col_o <= "101";
+                 col_o <= "101";
                     case row_i is
                         when "0111" => --row 1
                         number_o <= "0010"; --2
@@ -73,7 +73,7 @@ begin
                         number_o <= "1111";
                     end case;
                  when col_3 =>
-                col_o <= "110";
+                 col_o <= "110";
                     case row_i is
                         when "0111" => --row 1
                         number_o <= "0011"; --3
