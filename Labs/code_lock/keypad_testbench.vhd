@@ -12,11 +12,11 @@ architecture tb of testbench is
   port(
 	-- INPUTS
 	clk_i    : in  std_logic;
-    srst_n_i : in  std_logic;   -- Synchronous reset (active low)
-    row_i	 : in  unsigned(3 downto 0);
-    -- OUTPUTS
-    col_o	 : out unsigned(2 downto 0);
-    number_o:    out unsigned(3 downto 0)
+    	srst_n_i : in  std_logic;   -- Synchronous reset (active low)
+    	row_i	 : in  unsigned(3 downto 0);
+    	-- OUTPUTS
+    	col_o	 : out unsigned(2 downto 0);
+    	number_o:    out unsigned(3 downto 0)
     
   );
   end component;
@@ -29,11 +29,11 @@ architecture tb of testbench is
   
   BEGIN
 	UUT: keypad port map(
-      clk_i => clk_in,
-      srst_n_i => srst_n_in,
-      row_i => row_in,
-      col_o	=> col_out,
-      number_o => number_out 
+      		clk_i => clk_in,
+      		srst_n_i => srst_n_in,
+     		row_i => row_in,
+      		col_o	=> col_out,
+      		number_o => number_out 
       
     );
 	
