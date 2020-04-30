@@ -20,12 +20,12 @@ end entity top;
 ------------------------------------------------------------------------
 architecture Behavioral of top is
     
-    signal s_BTN0:      std_logic;
-    signal s_row_i:     unsigned(3 downto 0);
-    signal s_col_o:     unsigned(2 downto 0);
-    signal code_state:  unsigned(15 downto 0);  -- *see bellow
-    signal s_alarm:     unsigned(3 downto 0);
-    signal s_number:    unsigned(3 downto 0)
+    signal s_BTN0       :  std_logic;
+    signal s_row_i      :  unsigned(3 downto 0);
+    signal s_col_o      :  unsigned(2 downto 0);
+    signal code_state   :  unsigned(15 downto 0);  -- *see bellow
+    signal s_alarm      :  unsigned(3 downto 0);
+    signal s_number     :  unsigned(3 downto 0)
 
     begin
         
