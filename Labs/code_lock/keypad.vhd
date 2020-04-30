@@ -4,20 +4,20 @@ use ieee.numeric_std.all;
 
 entity keypad is 
 port(
-    clk_i:      in  std_logic;
-    srst_n_i:   in  std_logic;
-    row_i:      in  unsigned(3 downto 0); --low active with pull up resistors
-    col_o:      out unsigned(2 downto 0); 
-    number_o:   out unsigned(3 downto 0)  --output signalization /wrong code/
+    clk_i	:   in  std_logic;
+    srst_n_i	:   in  std_logic;
+    row_i	:   in  unsigned(3 downto 0); --low active with pull up resistors
+    col_o	:   out unsigned(2 downto 0); 
+    number_o	:   out unsigned(3 downto 0)  --output signalization /wrong code/
     );
 end keypad;
 
 architecture Behavioral of keypad is
 
     type        state_type is (col_1, col_2, col_3);
-    signal      state:                              state_type;       
-    signal      s_en:                               std_logic;
-    signal 	s_cnt : unsigned(16-1 downto 0) := x"0000";
+    signal      state	: state_type;       
+    signal      s_en	: std_logic;
+    signal 	s_cnt 	: unsigned(16-1 downto 0) := x"0000";
 	
 
 begin
@@ -27,8 +27,8 @@ begin
 			g_NPERIOD => x"0001"			-- 100ms with 10kHz signal
 	 			)
 	 port map(
-			clk_i    		=> clk_i,  		-- 10 kHz
-			srst_n_i 		=> srst_n_i,   	-- Synchronous reset
+			clk_i    	=> clk_i,  		-- 10 kHz
+			srst_n_i 	=> srst_n_i,   	-- Synchronous reset
 			clock_enable_o 	=> s_en			
 	 		 );
 
