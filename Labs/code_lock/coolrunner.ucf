@@ -1,0 +1,33 @@
+#-----------------------------------------------------------------------
+#
+# Constraints file with pin assignments.
+# CoolRunner-II CPLD starter board, ISE Design Suite 14.7
+#
+# Copyright (c) 2017-2020 Tomas Fryza
+# Dept. of Radio Electronics, Brno University of Technology, Czechia
+# This work is licensed under the terms of the MIT license.
+#
+#-----------------------------------------------------------------------
+
+#-----------------------------------------------------------------------
+# Buttons & switches
+#-----------------------------------------------------------------------
+# Two push buttons
+#NET BTN1        LOC = P94;
+ NET BTN0        LOC = P143;
+
+# Two slide switches
+#NET SW1         LOC = P124;
+#NET SW0         LOC = P39;
+
+#-----------------------------------------------------------------------
+# Four discrete LEDs
+#-----------------------------------------------------------------------
+ NET LD3         LOC = P64;
+ NET LD2         LOC = P66;
+ NET LD1         LOC = P68;
+ NET LD0         LOC = P69;
+#-----------------------------------------------------------------------
+# Clock
+#-----------------------------------------------------------------------
+ NET clk_i           LOC = P38;

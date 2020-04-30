@@ -1,0 +1,20 @@
+#-----------------------------------------------------------------------
+# Keypad Matrix / Low active
+#-----------------------------------------------------------------------
+#
+#-----------------------------------------------------------------------
+# Rows input of keypad matrix
+#-----------------------------------------------------------------------
+
+NET R0           LOC = P9    |IOSTANDARD = LVCMOS33;
+NET R1           LOC = P10   |IOSTANDARD = LVCMOS33;
+NET R2           LOC = P6    |IOSTANDARD = LVCMOS33;
+NET R3           LOC = P7    |IOSTANDARD = LVCMOS33;
+#
+#-----------------------------------------------------------------------
+# Columns output of keypad matrix
+#-----------------------------------------------------------------------
+#
+NET C0           LOC = P4    |IOSTANDARD = LVCMOS33;
+NET C1           LOC = P5    |IOSTANDARD = LVCMOS33;
+NET C2           LOC = P2    |IOSTANDARD = LVCMOS33;
