@@ -1,5 +1,5 @@
 
-# Code lock with matrix keypad and time limit for entering the code //tucne 
+# Code lock with matrix keypad and time limit for entering the code
  
 The code consist of 4 vhdl files
     
