@@ -7,7 +7,7 @@ use ieee.numeric_std.all;
 ------------------------------------------------------------------------
 entity clock_enable is
 generic (
-    g_NPERIOD : unsigned(16-1 downto 0) := x"0004"
+    g_NPERIOD      : unsigned(16-1 downto 0) := x"0004"
 );
 port (
     clk_i          : in  std_logic;
