@@ -8,7 +8,7 @@ port(
     srst_n_i	:   in  std_logic;
     row_i	:   in  unsigned(3 downto 0); --low active with pull up resistors
     col_o	:   out unsigned(2 downto 0); 
-    number_o	:   out unsigned(3 downto 0)  --output signalization /wrong code/
+    number_o	:   out unsigned(3 downto 0)
     );
 end keypad;
 
