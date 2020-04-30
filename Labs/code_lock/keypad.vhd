@@ -17,8 +17,8 @@ architecture Behavioral of keypad is
     type        state_type is (col_1, col_2, col_3);
     signal      state:                              state_type;       
     signal      s_en:                               std_logic;
-    signal s_cnt : unsigned(16-1 downto 0) := x"0000";
-	--signal      number_o:                     unsigned(3 downto 0); --does it belong here? --assign number to detected key
+    signal 	s_cnt : unsigned(16-1 downto 0) := x"0000";
+	
 
 begin
 
