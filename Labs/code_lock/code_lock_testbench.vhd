@@ -15,7 +15,7 @@ architecture tb of testbench is
     	srst_n_i:	 in  	std_logic;   -- Synchronous reset (active low)
     	row_i:		 in  	unsigned(3 downto 0);
     	-- OUTPUTS
-    	col_o:       out    unsigned(2 downto 0);
+    	col_o:       	 out    unsigned(2 downto 0);
     	state_o:	 out    unsigned(15 downto 0);
     	alarm_o:	 out 	unsigned(3 downto 0)
     
